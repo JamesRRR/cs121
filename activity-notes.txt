@@ -1,0 +1,48 @@
+Name: James Ren &Ziyuan Shang
+Activity-Notes
+D1. It gives usage of git and common Git commands used in various situations.
+D2. It lists available subcommands and some concept guides.
+
+E1. Setting your Git username and email for every repository on your computer.
+E2. --Global is used to tell the command to read from only that location.
+
+F1. ls -ad .*
+F2. No.
+F4. .git
+F5. It deletes all the git related information like branch and version. 
+F6. Check if there is a .git hidden file.
+
+G1. what branch we are at, files that can be commited.
+G2. add local file to the git repository.
+G3. commit changes to  git repository.
+G4. add all changed files; . means all files with a . 
+G5. It will open the vim editor and allow you to write multi-line commit messages.
+G6. git commit
+G7. It tells you the commit history in order with Author, email, Date, and commit message
+
+H1. Staged: files added to the git repository but not yet commit 
+    Unstaged: files haven't be update to the repo 
+    Untracked: new files exitsts locally, isn't part of the git repo
+H2. only staged files will be commited
+H3. git add <file>
+H4. git reset HEAD <file>...
+H5. git diff shows the changes of the unstaged files
+H6. git diff -cached shows the changes of staged file
+H7. git reset HEAD names.txt
+    git add movies.txt
+H8. movies.txt is both staged and unstaged, the old changes to the movies.txt
+    remained staged. Therefore, the system believes that it may be a new file.
+H9. In git status, it shows the status of names.txt as deleted. The system cannot
+    find the file in local repo.
+H10.movies.txt has been deleted, last-movies.txt is untracked. The system cannot find
+    movies.txt in local repo, instead it finds a new file last-movies.txt
+H11. git add . ; git commit
+H12. added but hasn't been commited
+H13. so developer can change or test in the local repo before commiting.
+
+I1. reset the most recent commitment 
+I2. reset the most recent commitment without putting files on staged
+I3. soft putting files on staged, hard didn't. 
+I4. most recent commit 
+I5. first parent of HEAD
+
